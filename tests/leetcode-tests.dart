@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import './build-array-from-permutation.dart';
+import '../leetcode/array/build-array-from-permutation.dart';
 
 void main() {
   group('Build Array From Permutation', () {
