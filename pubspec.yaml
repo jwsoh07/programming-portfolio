@@ -1,0 +1,9 @@
+name: programming_with_dart
+description: >-
+  This package solves programming problems with the dart programming language.
+repository:
+  https://github.com/jwsoh07/programming-portfolio
+environment:
+  sdk: ^3.0.0
+dev_dependencies:
+  test: 1.24.6
