@@ -1,25 +1,19 @@
-name: Run Tests on Push
+name: Dart
 
 on:
+  pull_request:
+    branches: [main]
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: dart-lang/setup-dart@v1
 
-      - name: Set up Dart
-        uses: dart-lang/setup-dart@v2
-        with:
-          sdk: stable
-
-      - name: Install dependencies
-        run: dart pub get
-
-      - name: Run tests
-        run: dart test tests  # Replace with the path to your test directory or file
+      - run: dart pub get
+      - run: dart format --output=none --set-exit-if-changed .
+      - run: dart analyze
+      - run: dart test tests
