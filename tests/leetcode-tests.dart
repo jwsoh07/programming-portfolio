@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
-import '../leetcode/array/build-array-from-permutation.dart';
-import '../leetcode/array/number-of-employees-who-met-the-target.dart';
+import '../src/leetcode/array/build-array-from-permutation.dart';
+import '../src/leetcode/array/number-of-employees-who-met-the-target.dart';
 
 void main() {
   group('Build Array From Permutation', () {
