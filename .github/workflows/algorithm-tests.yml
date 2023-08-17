@@ -6,8 +6,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'src/**.dart'
-      - 'tests/**.dart'
+      - 'src/algorithms/**.dart'
+      - 'tests/algorithm-tests.dart'
 
 jobs:
   build:
@@ -19,4 +19,4 @@ jobs:
       - run: dart pub get
       - run: dart format --output=none --set-exit-if-changed .
       - run: dart analyze
-      - run: dart test tests/*.dart
+      - run: dart test tests/algorithm-tests.dart
