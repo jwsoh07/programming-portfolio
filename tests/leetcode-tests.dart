@@ -26,5 +26,9 @@ void main() {
           Solutio2798().numberOfEmployeesWhoMetTarget([5, 1, 4, 2, 2], 6);
       expect(result, equals(0));
     });
+    test('Case 3', () {
+      var result = Solutio2798().numberOfEmployeesWhoMetTarget([], 10);
+      expect(result, equals(0));
+    });
   });
 }
