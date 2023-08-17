@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/number-of-employees-who-met-the-target/
 
-class Solutio2798 {
+class Solution2798 {
   int numberOfEmployeesWhoMetTarget(List<int> hours, int target) {
     // init total employees who worked at least x hours
     var count = 0;

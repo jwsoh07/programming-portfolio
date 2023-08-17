@@ -18,16 +18,16 @@ void main() {
   group('Number of Employees Who Met the Target', () {
     test('Case 1', () {
       var result =
-          Solutio2798().numberOfEmployeesWhoMetTarget([0, 1, 2, 3, 4], 2);
+          Solution2798().numberOfEmployeesWhoMetTarget([0, 1, 2, 3, 4], 2);
       expect(result, equals(3));
     });
     test('Case 2', () {
       var result =
-          Solutio2798().numberOfEmployeesWhoMetTarget([5, 1, 4, 2, 2], 6);
+          Solution2798().numberOfEmployeesWhoMetTarget([5, 1, 4, 2, 2], 6);
       expect(result, equals(0));
     });
     test('Case 3', () {
-      var result = Solutio2798().numberOfEmployeesWhoMetTarget([], 10);
+      var result = Solution2798().numberOfEmployeesWhoMetTarget([], 10);
       expect(result, equals(0));
     });
   });
